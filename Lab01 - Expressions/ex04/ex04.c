@@ -1,7 +1,26 @@
 #include <stdio.h>
 
 int main() {
+    float n1 = 0;
+    float n2 = 0;
+    float n3 = 0;
+    float n4 = 0;
+    float m = 0;
+
     printf("<< Media Aritmetica >>\n");
+    printf("Digite a 1a nota: ");
+    scanf("%f", &n1);
+    printf("Digite a 2a nota: ");
+    scanf("%f", &n2);
+    printf("Digite a 3a nota: ");
+    scanf("%f", &n3);
+    printf("Digite a 4a nota: ");
+    scanf("%f", &n4);
+    m = (n1+n2+n3+n4)/4;
+    printf("===Notas===\n");
+    printf("Nota 1: %.2f; Nota 2: %.2f; Nota 3: %.2f; Nota 4: %.2f\n", n1, n2, n3, n4);
+    printf("Media: %.2f", m);
+
 }
 
 /*
