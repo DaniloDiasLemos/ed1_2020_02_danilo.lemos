@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int n, vet[5], i = 0, x = 1;
+    int n, vet[6], i = 0, x = 1;
 
     printf("<< Listando um vetor de numeros pares>>\n");
 
@@ -21,8 +21,12 @@ int main(){
     
     }
 
-    printf("Os numeros pares digitados foram: %d %d %d %d %d %d", vet[0],  vet[1], vet[2], vet[3], vet[4], vet[5]);
-    
+    printf("\nOs numeros pares digitados foram: %d ",vet[0]);
+    for (i = 1; i < 6; i++)
+    {
+        printf("%d ", vet[i]);
+    }
+    printf("\n");
 
     return 0;
 }

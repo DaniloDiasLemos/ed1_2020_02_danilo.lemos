@@ -1,7 +1,40 @@
 #include <stdio.h>
 
 int main(){
+    int i,x, z = 1, y = 101;
+    float m;
+
     printf("<< Media de n alunos. Maximo 100 alunos >>\n");
+    while (y > 100)
+    {
+        printf("Entre com o numero de alunos: ");
+        scanf("%d", &x);
+        if (x <= 100)
+        {
+            y = x;
+        }else
+        {
+            printf("Erro! O numero maximo de alunos permitido eh 100.\n");
+        }
+    }
+    float vet[x];
+    for (i = 0; i < x; i++)
+    {
+        printf("Digite a nota do aluno %d: ", z);
+        z++;
+        scanf("%f", &vet[i]);
+    }
+    for (i = 0; i < x; i++)
+    {
+        m = m + vet[i];
+    }
+    m = m/x;
+    printf("\nRelatorio de notas\n");
+    for (i = 0; i < x; i++)
+    {
+        printf("Nota do aluno %d: %.2f\n", i, vet[i]);
+    }
+    printf("Media da turma: %.2f\n", m);
 
     return 0;
 }

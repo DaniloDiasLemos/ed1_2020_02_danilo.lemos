@@ -1,7 +1,29 @@
 #include <stdio.h>
+#include <math.h>
 
 int main(){
+    int vet[5], x = 1;
+    float m = 0, dp = 0;
     printf("<< Media e desvio-padrao >>\n");
+
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Entre com a nota do aluno %d: ", x);
+        x = x + 1;
+        scanf("%d", &vet[i]);
+    }
+    for (int i = 0; i < 5; i++)
+    {
+        m = m + vet[i];
+    }
+    m = m/5;
+    for (int i = 0; i < 5; i++)
+    {
+        dp = dp + pow(vet[i] - m,2);
+    } 
+    dp = sqrt(dp/(5-1));
+
+    printf("A media eh %.2f e o desvio-padrao eh %.2f", m, dp);
 
     return 0;
 }

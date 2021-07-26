@@ -1,12 +1,12 @@
 #include <stdio.h>
 
 int main(){
-    int x = 1, vet[4], max, min;
+    int x = 1, vet[5], max, min, i;
     float mean;
 
     printf("<< Five Values >>\n");
 
-    for (int i = 0; i < 5; i++)
+    for (i = 0; i < 5; i++)
     {
         printf("Input #%d: ", x);
         x++;
@@ -27,10 +27,18 @@ int main(){
         }
     }
 
-    mean = (vet[0] + vet[1] + vet[2] + vet[3] + vet[4])/5;
+    for (i = 0; i < 5; i++)
+    {
+        mean = mean + vet[i];
+    }
+    mean = mean/5;
 
-    printf("The numbers entered are: %d %d %d %d %d\n", vet[0], vet[1], vet[2], vet[3], vet[4]);
-    printf("Max. Value: %d\n", max);
+    printf("\nThe numbers entered are: %d ",vet[0]);
+    for (i = 1; i < 5; i++)
+    {
+        printf("%d ", vet[i]);
+    }
+    printf("\nMax. Value: %d\n", max);
     printf("Min. Value: %d\n", min);
     printf("Mean: %.2f", mean);
 

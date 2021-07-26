@@ -1,8 +1,30 @@
 #include <stdio.h>
 
 int main(){
+    int x = 1, maiorP;
+    float vet[5],max;
+
     printf("<< Normalizando as notas >>\n");
 
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Entre com a nota do aluno %d: ", x);
+        x++;
+        scanf("%f", vet[i]);
+        if (i == 0)
+        {
+            max = vet[0];
+            maiorP = i;
+        }
+        if (vet[i] > max)
+        {
+            max = vet[i];
+            maiorP = i;
+        }
+    }
+    vet[maiorP] = 100;
+
+    
     return 0;
 }
 

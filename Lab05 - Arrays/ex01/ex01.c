@@ -2,7 +2,7 @@
 
 int main(){
 
-    int vet[5];
+    int vet[6];
 
     printf("<< Listando um vetor >>\n");
     printf("Entre com o numero 1: ");

@@ -2,7 +2,7 @@
 
 int main(){
 
-    int vet[5], i = 0, x = 1;
+    int vet[6], i = 0, x = 1;
 
     printf("<< Listando um vetor - com loops >>\n");
 
@@ -14,7 +14,12 @@ int main(){
         i += 1;
     }
 
-    printf("\nOs valores lidos sao: %d %d %d %d %d %d", vet[0], vet[1], vet[2], vet[3], vet[4], vet[5]);
+    printf("\nOs valores lidos sao: %d ",vet[0]);
+    for (i = 1; i < 6; i++)
+    {
+        printf("%d ", vet[i]);
+    }
+    printf("\n");
 
     return 0;
 }
