@@ -1,8 +1,43 @@
 #include <stdio.h>
 
 int main(){
+    int x = 1, vet[4], max, min, maiorP, menorP;
+    float mean;
+
     printf("<< Five Values with index >>\n");
 
+    for (int i = 0; i < 5; i++)
+    {
+        printf("Input #%d: ", x);
+        x++;
+        scanf("%d", &vet[i]);
+        if (i == 0)
+        {
+            max = vet[0];
+            min = vet[0];
+            maiorP = i;
+            menorP = i;
+        }
+        if (vet[i] > max)
+        {
+            max = vet[i];
+            maiorP = i;
+        }
+        if (vet[i] < min)
+        {
+            min = vet[i];
+            menorP = i;
+        }
+    }
+
+    mean = (vet[0] + vet[1] + vet[2] + vet[3] + vet[4])/5;
+
+    printf("The numbers entered are: %d %d %d %d %d\n", vet[0], vet[1], vet[2], vet[3], vet[4]);
+    printf("Max. Value: %d, index %d of the array\n", max, maiorP);
+    printf("Min. Value: %d, index %d of the array\n", min, menorP);
+    printf("Mean: %.2f", mean);
+
+    
     return 0;
 }
 
