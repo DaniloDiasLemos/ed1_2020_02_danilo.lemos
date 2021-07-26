@@ -20,6 +20,8 @@ int main() {
     printf("Valor liquido R$: %.2f\n", liquido);
     printf("ISS R$: %.2f\n", iss);
     printf("IR R$: %.2f\n", ir);
+
+    return 0;
 }
 
 /*

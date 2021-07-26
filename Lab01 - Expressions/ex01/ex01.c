@@ -9,6 +9,8 @@ int main(){
     scanf("%f", &n);
     quadrado = n * n;
     printf("O valor de %.2f ao quadrado e %.2f", n, quadrado);
+
+    return 0;
 }
 
 /*

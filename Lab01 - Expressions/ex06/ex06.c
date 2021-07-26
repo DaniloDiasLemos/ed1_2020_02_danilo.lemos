@@ -16,6 +16,8 @@ int main() {
     printf("Segundo vencedor: %.2f\n", ganhador2);
     printf("Terceiro vencedor: %.2f\n", ganhador3);
 
+    return 0;
+
 }
 
 /*

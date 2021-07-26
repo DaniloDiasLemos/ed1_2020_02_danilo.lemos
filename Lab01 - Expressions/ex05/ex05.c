@@ -9,6 +9,8 @@ int main() {
     scanf("%f", &s);
     aumento = (0.25 * s)  + s;
     printf("Apos 25 porcento de aumento o salario fica em R$ %.2f", aumento);
+
+    return 0;
 }
 
 /*

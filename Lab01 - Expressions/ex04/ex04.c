@@ -21,6 +21,7 @@ int main() {
     printf("Nota 1: %.2f; Nota 2: %.2f; Nota 3: %.2f; Nota 4: %.2f\n", n1, n2, n3, n4);
     printf("Media: %.2f", m);
 
+    return 0;
 }
 
 /*

@@ -15,6 +15,7 @@ int main() {
     printf("Numero: %d\n", n);
     printf("Sucessor: %d\n", s);
 
+    return 0;
 }
 
 /*

@@ -1,7 +1,21 @@
 #include <stdio.h>
 
 int main(){
-    printf("<< Listando um vetor em ordem inversa !!! >>\n");
+
+    int vet[5], i = 0, x = 1;
+
+    printf("<< Listando um vetor - com loops >>\n");
+
+    while (i < 6)
+    {
+        printf("Entre com o numero %d: ", x);
+        x++;
+        scanf("%d", &vet[i]);
+        i += 1;
+    }
+
+    printf("\nOs valores lidos sao: %d %d %d %d %d %d", vet[5], vet[4], vet[3], vet[2], vet[1], vet[0]);
+    
     return 0;
 }
 
