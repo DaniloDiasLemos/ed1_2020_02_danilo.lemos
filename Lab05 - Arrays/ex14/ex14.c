@@ -1,7 +1,40 @@
 #include <stdio.h>
 
 int main(){
+    int i,x, z = 1, y = 10001;
+    float m;
+
     printf("<< Universidade X >>\n");
+    while (y > 10000)
+    {
+        printf("Quantos alunos serao cadastrados: ");
+        scanf("%d", &x);
+        if (x <= 10000)
+        {
+            y = x;
+        }else
+        {
+            printf("Erro! O numero maximo de alunos permitido eh 10000.\n");
+        }
+    }
+    int vet[x], nm[x];
+    char cs[x];
+    float cra[x];
+
+    for (i = 0; i < x; i++)
+    {
+        printf("\nEntre com o numero do aluno: ");
+        scanf("%d", &nm[i]);
+        printf("Entre com a classe social do aluno %d: ", nm[i]);
+        scanf(" %c", &cs[i]);
+        printf("Entre com o CRA do aluno %d: ", nm[i]);
+        scanf("%f", &cra[i]);
+    }
+    printf("\n\n==== Alunos Cadastrados ====\n");
+    for (i = 0; i < x; i++)
+    {
+        printf("Numero: %d Classe Social: %c CRA: %.2f\n",nm[i], cs[i], cra[i]);
+    }
 
     return 0;
 }

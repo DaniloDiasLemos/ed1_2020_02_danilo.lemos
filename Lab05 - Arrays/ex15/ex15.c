@@ -1,7 +1,30 @@
 #include <stdio.h>
 
 int main(){
+    int vet[8], i, j = 0, x = 1, igual;
+
     printf("<< Valores iguais >>\n");
+
+    for (i = 0; i < 8; i++)
+    {
+        printf("Entre com o numero %d: ", x);
+        x++;
+        scanf("%d", &vet[i]);
+        if (i > 0)
+        {
+            for (j = 0; j < i; j++)
+            {
+                if (vet[j] == vet[i])
+                {
+                    /* code */
+                }
+            }
+            
+        }
+        igual = vet[i];
+    }
+
+    
 
     return 0;
 }
