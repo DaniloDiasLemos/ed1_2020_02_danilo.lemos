@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(){
-    int vet[8], i, j = 0, x = 1, igual;
+    int vet[8], i, j = 0, x = 1, igual[8], k = 0;
 
     printf("<< Valores iguais >>\n");
 
@@ -10,21 +10,21 @@ int main(){
         printf("Entre com o numero %d: ", x);
         x++;
         scanf("%d", &vet[i]);
-        if (i > 0)
+    }
+    for (i = 0; i < 8; i++  )
+    {
+        if (vet[i] == vet[i-1])
         {
-            for (j = 0; j < i; j++)
-            {
-                if (vet[j] == vet[i])
-                {
-                    /* code */
-                }
-            }
-            
+            igual[k] = vet[i];
+            k++;
         }
-        igual = vet[i];
     }
 
-    
+    printf("Valores repetidos: %d", igual[0]);
+    for (i = 1; i < 8; i++)
+    {
+        printf("%d, ", igual[i]);
+    }
 
     return 0;
 }
