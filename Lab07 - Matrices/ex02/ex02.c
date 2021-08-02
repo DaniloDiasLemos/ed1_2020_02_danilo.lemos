@@ -3,13 +3,14 @@
 
 int main()
 {
-    int mat1[4][4], mat2[4][4];
-    int i,j, soma, resultado = 0;
+    int mat1[3][3], mat2[3][3];
+    int i,j;
+    long int multiplicacao, resultado = 0;
     srand (time(NULL));
 
-    for (i = 0; i < 4; i++) 
+    for (i = 0; i < 3; i++) 
     { 
-        for (j = 0; j < 4; j++) 
+        for (j = 0; j < 3; j++) 
         {
         //scanf("%d",&mat[i][j]);
         mat1[i][j] = (rand()/(double)RAND_MAX)*100;
@@ -19,16 +20,16 @@ int main()
         }
     }
 
-    for (i = 0; i < 4; i++)
+    for (i = 0; i < 3; i++)
     {
-        for (j = 0; j < 4; j++)
+        for (j = 0; j < 3; j++)
         {
-            soma = mat1[i][j] + mat2[i][j];
-            resultado = resultado + soma;
+            multiplicacao = mat1[i][j] * mat2[i][j];
+            resultado = resultado + multiplicacao;
         }
     }
 
-    printf("A soma das matrizes: %d", resultado);
+    printf("A multiplicacao das matrizes: %ld", resultado);
     
     return 0;
 }
