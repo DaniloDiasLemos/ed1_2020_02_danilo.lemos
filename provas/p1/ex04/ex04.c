@@ -3,7 +3,7 @@
 #include <math.h>
 
 int main(){
-
+    
    // Ex04: Um círculo pode ser definido com duas informações
    // - um ponto central; que é sua coordenada x,y no espaço cartesiano
    // - um raio; que é a distância da borda ao centro
@@ -13,7 +13,7 @@ int main(){
    // que define o círculo, isto é, armazena um ponto e um raio.
    
    // No programa principal crie uma variável para definir um círculo e a partir dessa variável
-   // e mostre a área e a distância do centro do círculo até a origem. 
+   // mostre a área e a distância do centro do círculo até a origem. 
    // fórmulas:
    // area = 3,14*r*r
    // distancia d = sqtr(x*x + y*y)
