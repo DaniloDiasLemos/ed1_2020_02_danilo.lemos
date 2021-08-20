@@ -31,7 +31,7 @@ int calculalucro(float c, float v) {
    float lucro;
    int class, margem;
 
-   lucro = c - v;
+   lucro = v - c;
    margem = (lucro/c) * 100;
    if (margem < 0 || margem == 0)
    {
