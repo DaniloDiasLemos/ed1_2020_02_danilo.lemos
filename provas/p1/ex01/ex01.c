@@ -13,7 +13,7 @@
 struct livros {
     char nome[100];
     float preco;
-    char indicacao;
+    char indicacao;// check:<<<erro: e1.01a: Novo/Usado deve ser booleano (no caso, int) ; Pode-se usar um char, mas com isso exige-se sempre uma comparação de valores>>>>
     int ano;
 };
 
@@ -27,6 +27,7 @@ int main(){
     printf("Informe quantos livros deseja cadastrar: ");
     scanf(" %d", &n);
     struct livros livro[n];
+    // check:<<<erro: e1.3b: Não fez alocação dinâmica corretamente. Não permiti no curso o uso de VLA - veja nos slides>>>>
     for (i = 0; i < n; i++)
     {
         printf("Informe o nome do livro %d: ", i+1);
@@ -41,6 +42,6 @@ int main(){
         printf("\n");
     }
     
-  
+ // check:<<<erro: e1.5: Falou liberar memória com free>>>> 
     return 0;
 }

@@ -27,13 +27,16 @@
 +-------------------+-----------------------------------------------+----------------+
 
 */
+// check:<<<erro: e3.1b: A função deve calcular e retornar por referência a porcentagem>>>>
+// check:<<<erro: e3.2: Faltou testar os valores inválidos dentro da função / teste errado / faltou alguns testes>>>>
 int calculalucro(float c, float v) {
    float lucro;
    int class, margem;
 
    lucro = v - c;
+// check:<<<erro: e3.3: Cálculo com erros (não corresponde a porcentagem pedida OU erro na fórmula OU porcentagem baseada na venda e não na compra OU divisão inteira )>>>>
    margem = (lucro/c) * 100;
-   if (margem < 0 || margem == 0)
+   if (margem < 0 || margem == 0)// check:<<<comentário:  "<=" ?? >>>>
    {
        return 1;
    }
@@ -49,7 +52,7 @@ int calculalucro(float c, float v) {
    {
        return 4;
    }
-   
+    // check:<<<comentário: e3.4: o último teste é desnecessário E/OU alguns testes no IF são desnecessários>>>>   
    
 }
 
@@ -68,6 +71,10 @@ int main(){
    scanf("%f", &venda);
 
    indice = calculalucro(compra, venda);
+// check:<<<erro: e3.5a: Não mostrou a porcentagem>>>>
+// check:<<<erro: e3.6: e3.6: Chamada de função com erros (parâmetro de entrada e/ou saída) ou faltando a passagem por referência>>>>
+// check:<<<erro: e3.6a: Chamou a função mais de uma vez para o mesmo parâmetro / fez o cálculo da porcentagem no main>>>>
+// check:<<<erro: e3.7: testes com IF inválidos / não testou caso de erro corretamente / não testou valores inteiros no IF>>>>
 
    switch (indice)
    {
